@@ -62,8 +62,8 @@ def color_code(data):
 def notification_handler(sender, data):
     if data[0] != 0x0f:
         # print("MARIO {0}: {1}".format(sender, data))
-        gyro(data[4:7])
-        # color_code(data[4:7])
+        # gyro(data[4:7])
+        color_code(data[4:7])
         # for i in range(len(data)):
         #     a = hex(data[i])
         #     b = bin(data[i])[2:].zfill(8)
